@@ -7,7 +7,7 @@
 #include <algorithm>
 using namespace std;
 
-// Convert decimal number to binary representation as a string
+// Convert decimal nkldinary representation as a string
 string decimalToBinary(int number) {
     if (number == 0) return "0";
 
