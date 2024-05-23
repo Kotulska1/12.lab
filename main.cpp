@@ -6,14 +6,15 @@ using namespace std;
 
 int main() {
     int number;
-    cout << "Enter an integer: ";
+    cout << "Введіть ціле число: ";
     cin >> number;
 
     string binaryStr = decimalToBinary(number);
     writeBinaryToFile("binary_output.txt", binaryStr);
-
+    
+    // Оголошуємо змінну zeroCount, яка буде зберігати кількість нулів у бінарному рядку binaryStr.
     int zeroCount = countZerosInBinary(binaryStr);
-    cout << "Number of zeros in the binary representation: " << zeroCount << endl;
+    cout << "Кількість нулів у двійковому представленні: " << zeroCount << endl;
 
     return 0;
 }

@@ -26,7 +26,7 @@ void writeBinaryToFile(const string &filename, const string &binaryStr) {
         outFile << binaryStr;
         outFile.close();
     } else {
-        cout << "Unable to open file " << filename << endl;
+        cout << "Неможливо відкрити файл" << filename << endl;
     }
 }
 
